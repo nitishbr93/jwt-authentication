@@ -45,6 +45,7 @@ public class JwtController {
 	public ResponseEntity<?> generateToken(@RequestBody JwtRequest jwtRequest)throws Exception{
 		System.out.println("generate token");
 		System.out.println(jwtRequest);
+            System.out.println("jwt authenication");
 		try {
 			
 			this.authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(jwtRequest.getUsername(),jwtRequest.getPassword()));
