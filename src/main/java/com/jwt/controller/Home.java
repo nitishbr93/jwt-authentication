@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Home {
 	@RequestMapping("/welcome")
 	public String welcome() {
-system.out.println("this is home page");
+     System.out.println("this is home page");
 		String text="this is private page";
 		text+="this page is not allowed to anauthentical users";
 		return text;
